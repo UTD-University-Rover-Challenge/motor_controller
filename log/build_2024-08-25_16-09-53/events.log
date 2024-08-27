@@ -1,0 +1,10 @@
+[0.000000] (-) TimerEvent: {}
+[0.001630] (realsense2_camera_msgs) JobQueued: {'identifier': 'realsense2_camera_msgs', 'dependencies': OrderedDict()}
+[0.002596] (realsense2_camera) JobQueued: {'identifier': 'realsense2_camera', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/urc/rover/install/realsense2_camera_msgs')])}
+[0.002827] (realsense2_description) JobQueued: {'identifier': 'realsense2_description', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/urc/rover/install/realsense2_camera_msgs')])}
+[0.003136] (realsense2_camera_msgs) JobStarted: {'identifier': 'realsense2_camera_msgs'}
+[0.099660] (-) TimerEvent: {}
+[0.120819] (realsense2_camera_msgs) JobEnded: {'identifier': 'realsense2_camera_msgs', 'rc': 1}
+[0.132017] (realsense2_camera) JobSkipped: {'identifier': 'realsense2_camera'}
+[0.132240] (realsense2_description) JobSkipped: {'identifier': 'realsense2_description'}
+[0.132339] (-) EventReactorShutdown: {}

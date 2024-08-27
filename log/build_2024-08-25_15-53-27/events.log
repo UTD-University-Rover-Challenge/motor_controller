@@ -1,0 +1,147 @@
+[0.000000] (-) TimerEvent: {}
+[0.000791] (realsense2_camera_msgs) JobQueued: {'identifier': 'realsense2_camera_msgs', 'dependencies': OrderedDict()}
+[0.001135] (realsense2_camera) JobQueued: {'identifier': 'realsense2_camera', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/urc/rover/install/realsense2_camera_msgs')])}
+[0.001275] (realsense2_description) JobQueued: {'identifier': 'realsense2_description', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/urc/rover/install/realsense2_camera_msgs')])}
+[0.001384] (realsense2_camera_msgs) JobStarted: {'identifier': 'realsense2_camera_msgs'}
+[0.056677] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'cmake'}
+[0.057812] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/urc/rover/src/realsense-ros/realsense2_camera_msgs', '-DCMAKE_INSTALL_PREFIX=/home/urc/rover/install/realsense2_camera_msgs'], 'cwd': '/home/urc/rover/build/realsense2_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('NIX_CC', '/nix/store/49nb1m1ysq0vx31qp94alpmi6ccsq9l3-gcc-wrapper-13.2.0'), ('NIX_BINTOOLS_WRAPPER_TARGET_HOST_aarch64_unknown_linux_gnu', '1'), ('USER', 'urc'), ('SSH_CLIENT', 'fe80::1c10:25ce:3c60:ad61%wlan0 64859 22'), ('DEVENV_RUNTIME', '/run/user/1000/devenv-cd1232b'), ('XDG_SESSION_TYPE', 'tty'), ('OBJCOPY', 'objcopy'), ('TEMPDIR', '/tmp/nix-shell.BQz4Lk'), ('SIZE', 'size'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/urc'), ('DEVENV_NIX', '/nix/store/4xzm9n56q5caymlx1fxilnsv7dkpc0x1-nix-2.21-devenv'), ('OLDPWD', '/home/urc/rover/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('PS1', '(nix:$name)\\040\\[\\e[0;34m\\](devenv)\\[\\e[0m\\] ${debian_chroot:+($debian_chroot)}\\u@\\h:\\w\\$'), ('STRINGS', 'strings'), ('NIX_PROFILES', '/nix/var/nix/profiles/default /home/urc/.nix-profile'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('PKG_CONFIG', 'pkg-config'), ('NIX_ENFORCE_NO_NATIVE', '1'), ('DEVENV_DOTFILE', '/home/urc/rover/.devenv'), ('DEVENV_ROOT', '/home/urc/rover'), ('mesonFlags', ''), ('TMPDIR', '/tmp/nix-shell.BQz4Lk'), ('STRIP', 'strip'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'urc'), ('NIX_GCROOT', '/nix/store/75f4a82vrallvjva2y83d9bis7sgxfjb-devenv-shell-env'), ('DIRENV_ACTIVE', '/home/urc/rover:'), ('NIX_BINTOOLS', '/nix/store/nixrnab9i9ns541dz81yg3xy4acn6d12-binutils-wrapper-2.41'), ('cmakeFlags', ''), ('TEMP', '/tmp/nix-shell.BQz4Lk'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/nix/store/kbazl84h1h25mcx4amwiyfhrx3f61nfc-python3-3.11.8-env/lib/pkgconfig:/nix/store/ly0vfihn4krqrxa8s8yb3pwj8fjmxqy5-librealsense-2.54.2-dev/lib/pkgconfig'), ('READELF', 'readelf'), ('XDG_SESSION_CLASS', 'user'), ('AR', 'ar'), ('NIX_CFLAGS_COMPILE', ' -frandom-seed=75f4a82vra -isystem /nix/store/kbazl84h1h25mcx4amwiyfhrx3f61nfc-python3-3.11.8-env/include -isystem /nix/store/ly0vfihn4krqrxa8s8yb3pwj8fjmxqy5-librealsense-2.54.2-dev/include -isystem /nix/store/kbazl84h1h25mcx4amwiyfhrx3f61nfc-python3-3.11.8-env/include -isystem /nix/store/ly0vfihn4krqrxa8s8yb3pwj8fjmxqy5-librealsense-2.54.2-dev/include'), ('IN_NIX_SHELL', 'impure'), ('TERM', 'alacritty'), ('AS', 'as'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/nix/store/kbazl84h1h25mcx4amwiyfhrx3f61nfc-python3-3.11.8-env/bin:/nix/store/snmm315l2m8plcnlymvg07nza61rfmqx-hello/bin:/nix/store/r2hgky1da9cm621vyfspjvg846n108bi-git-2.44.0/bin:/nix/store/5d73b80ma2navc899cv4467056y8yqdb-librealsense-2.54.2/bin:/nix/store/hq14wsc58r6d7i0xbp6zlqyr9ag0fa4y-pkg-config-wrapper-0.29.2/bin:/nix/store/zgjzrx42nji68ypaz0nl3i6akqas6hip-patchelf-0.15.0/bin:/nix/store/49nb1m1ysq0vx31qp94alpmi6ccsq9l3-gcc-wrapper-13.2.0/bin:/nix/store/8y16aj4mk0rbck2hlg538322d5r1gi7m-gcc-13.2.0/bin:/nix/store/r5l5m3zpdf1ahbh0k6hlmbp0jaii3y78-glibc-2.39-5-bin/bin:/nix/store/ask2ry8k4y0603g95rmcxq0mds2mjcq6-coreutils-9.4/bin:/nix/store/nixrnab9i9ns541dz81yg3xy4acn6d12-binutils-wrapper-2.41/bin:/nix/store/jbrz1y7cb5za1nq20nvvgzyh4h4kv2f2-binutils-2.41/bin:/nix/store/ask2ry8k4y0603g95rmcxq0mds2mjcq6-coreutils-9.4/bin:/nix/store/b6vzfkd37p1srw1hkq92s0kqnpq6y9zn-findutils-4.9.0/bin:/nix/store/0vm9ajhh3y3lsh8pqwn51qfkj0sf3i48-diffutils-3.10/bin:/nix/store/5sp5mh914cnq72j6mc17y2flji5sj0vm-gnused-4.9/bin:/nix/store/97fjy58w7l9q0qkwig0ilk4vxj7ncfr7-gnugrep-3.11/bin:/nix/store/flaqh5qdn9y18bglpkx5inx8i27j164k-gawk-5.2.2/bin:/nix/store/n77ysc0vzx107g8kgr382l5zx3n8y4m8-gnutar-1.35/bin:/nix/store/lc4fhc2xhpdiscwcry09z5fzyx30ghik-gzip-1.13/bin:/nix/store/s4d69r766r6y5ivx3ia5gaxzs5wcpww9-bzip2-1.0.8-bin/bin:/nix/store/gllwhajbyfz7rnbydglmyd33vlzdar5n-gnumake-4.4.1/bin:/nix/store/q36009ll4v7ay3xv4na856w715nfrbn8-bash-5.2p26/bin:/nix/store/j87160bigr3zs78yb7pnjajpam6jknsd-patch-2.7.6/bin:/nix/store/1m5sgjjb9qqffvrjchra7m2231zy2d6s-xz-5.4.6-bin/bin:/nix/store/avxc978l3kbf8vzbw4pvbcjvapgd1xnl-file-5.45/bin:/home/urc/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/nix/store/g6hfjfkhiiwqh5b5h50yar2jsc47kr2g-devenv-1.0.8/bin:/nix/store/a0gjgcyfzqraa9ys8h8c9sjykgaj19vm-cachix-1.7.4-bin/bin:/opt/ros/humble/bin:/home/urc/.nix-profile/bin:/nix/var/nix/profiles/default/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('system', 'aarch64-linux'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('NIX_CC_WRAPPER_TARGET_HOST_aarch64_unknown_linux_gnu', '1'), ('SOURCE_DATE_EPOCH', '315532800'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('DEVENV_PROFILE', '/nix/store/zsbbvlza99m4mnf95cc5fvc9ndjlblg4-devenv-profile'), ('NIX_PKG_CONFIG_WRAPPER_TARGET_HOST_aarch64_unknown_linux_gnu', '1'), ('LANG', 'C.UTF-8'), ('NIX_LDFLAGS', '-rpath /home/urc/rover/outputs/out/lib  -L/nix/store/kbazl84h1h25mcx4amwiyfhrx3f61nfc-python3-3.11.8-env/lib -L/nix/store/5d73b80ma2navc899cv4467056y8yqdb-librealsense-2.54.2/lib -L/nix/store/kbazl84h1h25mcx4amwiyfhrx3f61nfc-python3-3.11.8-env/lib -L/nix/store/5d73b80ma2navc899cv4467056y8yqdb-librealsense-2.54.2/lib'), ('LS_COLORS', ''), ('TMP', '/tmp/nix-shell.BQz4Lk'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('NIX_BUILD_TOP', '/tmp/nix-shell.BQz4Lk'), ('NIX_HARDENING_ENABLE', 'bindnow format fortify fortify3 pic relro stackprotector strictoverflow'), ('SHELL', '/nix/store/q36009ll4v7ay3xv4na856w715nfrbn8-bash-5.2p26/bin/bash'), ('CXX', 'g++'), ('NIX_STORE', '/nix/store'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GREET', 'devenv'), ('NIX_SSL_CERT_FILE', '/etc/ssl/certs/ca-certificates.crt'), ('CONFIG_SHELL', '/nix/store/q36009ll4v7ay3xv4na856w715nfrbn8-bash-5.2p26/bin/bash'), ('name', 'devenv-shell-env'), ('PWD', '/home/urc/rover/build/realsense2_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('LD', 'ld'), ('SSH_CONNECTION', 'fe80::1c10:25ce:3c60:ad61%wlan0 64859 fe80::dea6:32ff:fea4:2801%wlan0 22'), ('LOCALE_ARCHIVE', '/nix/store/1y00g2glv4jj4yc5fv42mawl70q6dly8-glibc-locales-2.39-5/lib/locale/locale-archive'), ('XDG_DATA_DIRS', '/nix/store/kbazl84h1h25mcx4amwiyfhrx3f61nfc-python3-3.11.8-env/share:/nix/store/r2hgky1da9cm621vyfspjvg846n108bi-git-2.44.0/share:/nix/store/hq14wsc58r6d7i0xbp6zlqyr9ag0fa4y-pkg-config-wrapper-0.29.2/share:/nix/store/zgjzrx42nji68ypaz0nl3i6akqas6hip-patchelf-0.15.0/share:/usr/local/share:/usr/share:/home/urc/.nix-profile/share:/nix/var/nix/profiles/default/share:/var/lib/snapd/desktop:/home/urc/.nix-profile/share:/nix/var/nix/profiles/default/share'), ('PYTHONPATH', '/nix/store/zsbbvlza99m4mnf95cc5fvc9ndjlblg4-devenv-profile/lib/python3.11/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('DEVENV_STATE', '/home/urc/rover/.devenv/state'), ('configureFlags', ''), ('CC', 'gcc'), ('RANLIB', 'ranlib'), ('COLCON', '1'), ('NM', 'nm'), ('OBJDUMP', 'objdump'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.097206] (-) TimerEvent: {}
+[0.198125] (-) TimerEvent: {}
+[0.299066] (-) TimerEvent: {}
+[0.399852] (-) TimerEvent: {}
+[0.500709] (-) TimerEvent: {}
+[0.601495] (-) TimerEvent: {}
+[0.702249] (-) TimerEvent: {}
+[0.741622] (realsense2_camera_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[0.802414] (-) TimerEvent: {}
+[0.903139] (-) TimerEvent: {}
+[1.003858] (-) TimerEvent: {}
+[1.104579] (-) TimerEvent: {}
+[1.205401] (-) TimerEvent: {}
+[1.306160] (-) TimerEvent: {}
+[1.389769] (realsense2_camera_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[1.406356] (-) TimerEvent: {}
+[1.474151] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.506549] (-) TimerEvent: {}
+[1.607338] (-) TimerEvent: {}
+[1.708143] (-) TimerEvent: {}
+[1.808863] (-) TimerEvent: {}
+[1.909632] (-) TimerEvent: {}
+[2.010354] (-) TimerEvent: {}
+[2.022504] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.060904] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /nix/store/49nb1m1ysq0vx31qp94alpmi6ccsq9l3-gcc-wrapper-13.2.0/bin/gcc - skipped\n'}
+[2.062869] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.065997] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.081927] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.110514] (-) TimerEvent: {}
+[2.211221] (-) TimerEvent: {}
+[2.311980] (-) TimerEvent: {}
+[2.412871] (-) TimerEvent: {}
+[2.513646] (-) TimerEvent: {}
+[2.614499] (-) TimerEvent: {}
+[2.715341] (-) TimerEvent: {}
+[2.770007] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.810126] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /nix/store/49nb1m1ysq0vx31qp94alpmi6ccsq9l3-gcc-wrapper-13.2.0/bin/g++ - skipped\n'}
+[2.811118] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.812967] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.815505] (-) TimerEvent: {}
+[2.840433] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.915715] (-) TimerEvent: {}
+[3.016493] (-) TimerEvent: {}
+[3.117280] (-) TimerEvent: {}
+[3.218187] (-) TimerEvent: {}
+[3.318959] (-) TimerEvent: {}
+[3.419693] (-) TimerEvent: {}
+[3.520630] (-) TimerEvent: {}
+[3.621450] (-) TimerEvent: {}
+[3.722218] (-) TimerEvent: {}
+[3.754388] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found Python3: /nix/store/kbazl84h1h25mcx4amwiyfhrx3f61nfc-python3-3.11.8-env/bin/python3 (found version "3.11.8") found components: Interpreter \n'}
+[3.822409] (-) TimerEvent: {}
+[3.923123] (-) TimerEvent: {}
+[4.023932] (-) TimerEvent: {}
+[4.124705] (-) TimerEvent: {}
+[4.225502] (-) TimerEvent: {}
+[4.326343] (-) TimerEvent: {}
+[4.427026] (-) TimerEvent: {}
+[4.502273] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[4.527194] (-) TimerEvent: {}
+[4.530728] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.601119] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.627351] (-) TimerEvent: {}
+[4.728017] (-) TimerEvent: {}
+[4.786940] (realsense2_camera_msgs) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):\n'}
+[4.787721] (realsense2_camera_msgs) StderrLine: {'line': b"  Package 'rcutils' exports library 'dl' which couldn't be found\n"}
+[4.788129] (realsense2_camera_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[4.788488] (realsense2_camera_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)\n'}
+[4.788923] (realsense2_camera_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[4.789312] (realsense2_camera_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)\n'}
+[4.789730] (realsense2_camera_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[4.790097] (realsense2_camera_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_cConfig.cmake:41 (include)\n'}
+[4.790436] (realsense2_camera_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)\n'}
+[4.790792] (realsense2_camera_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)\n'}
+[4.791143] (realsense2_camera_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)\n'}
+[4.791491] (realsense2_camera_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)\n'}
+[4.791844] (realsense2_camera_msgs) StderrLine: {'line': b'  CMakeLists.txt:28 (find_package)\n'}
+[4.792184] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[4.792524] (realsense2_camera_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[4.828176] (-) TimerEvent: {}
+[4.928883] (-) TimerEvent: {}
+[4.932397] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.029056] (-) TimerEvent: {}
+[5.129758] (-) TimerEvent: {}
+[5.185552] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[5.229924] (-) TimerEvent: {}
+[5.284984] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[5.330100] (-) TimerEvent: {}
+[5.371643] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.430275] (-) TimerEvent: {}
+[5.530995] (-) TimerEvent: {}
+[5.631677] (-) TimerEvent: {}
+[5.732427] (-) TimerEvent: {}
+[5.833246] (-) TimerEvent: {}
+[5.933991] (-) TimerEvent: {}
+[6.034673] (-) TimerEvent: {}
+[6.135462] (-) TimerEvent: {}
+[6.140998] (realsense2_camera_msgs) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):\n'}
+[6.141557] (realsense2_camera_msgs) StderrLine: {'line': b'  \n'}
+[6.141940] (realsense2_camera_msgs) StderrLine: {'line': b'  execute_process(/nix/store/kbazl84h1h25mcx4amwiyfhrx3f61nfc-python3-3.11.8-env/bin/python3\n'}
+[6.142481] (realsense2_camera_msgs) StderrLine: {'line': b'  -m rosidl_adapter --package-name realsense2_camera_msgs --arguments-file\n'}
+[6.142842] (realsense2_camera_msgs) StderrLine: {'line': b'  /home/urc/rover/build/realsense2_camera_msgs/rosidl_adapter__arguments__realsense2_camera_msgs.json\n'}
+[6.143175] (realsense2_camera_msgs) StderrLine: {'line': b'  --output-dir\n'}
+[6.143511] (realsense2_camera_msgs) StderrLine: {'line': b'  /home/urc/rover/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs\n'}
+[6.143862] (realsense2_camera_msgs) StderrLine: {'line': b'  --output-file\n'}
+[6.144184] (realsense2_camera_msgs) StderrLine: {'line': b'  /home/urc/rover/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs.idls)\n'}
+[6.144503] (realsense2_camera_msgs) StderrLine: {'line': b'  returned error code 1:\n'}
+[6.144892] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[6.145213] (realsense2_camera_msgs) StderrLine: {'line': b'  Traceback (most recent call last):\n'}
+[6.145550] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[6.145877] (realsense2_camera_msgs) StderrLine: {'line': b'    File "<frozen runpy>", line 198, in _run_module_as_main\n'}
+[6.146329] (realsense2_camera_msgs) StderrLine: {'line': b'    File "<frozen runpy>", line 88, in _run_code\n'}
+[6.147219] (realsense2_camera_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>\n'}
+[6.147764] (realsense2_camera_msgs) StderrLine: {'line': b'      sys.exit(main())\n'}
+[6.148146] (realsense2_camera_msgs) StderrLine: {'line': b'               ^^^^^^\n'}
+[6.148514] (realsense2_camera_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main\n'}
+[6.149070] (realsense2_camera_msgs) StderrLine: {'line': b'      abs_idl_file = convert_to_idl(\n'}
+[6.149874] (realsense2_camera_msgs) StderrLine: {'line': b'                     ^^^^^^^^^^^^^^^\n'}
+[6.150445] (realsense2_camera_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 18, in convert_to_idl\n'}
+[6.150867] (realsense2_camera_msgs) StderrLine: {'line': b'      from rosidl_adapter.msg import convert_msg_to_idl\n'}
+[6.151267] (realsense2_camera_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 16, in <module>\n'}
+[6.151710] (realsense2_camera_msgs) StderrLine: {'line': b'      from rosidl_adapter.resource import expand_template\n'}
+[6.152160] (realsense2_camera_msgs) StderrLine: {'line': b'    File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/resource/__init__.py", line 19, in <module>\n'}
+[6.152700] (realsense2_camera_msgs) StderrLine: {'line': b'      import em\n'}
+[6.153212] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[6.153627] (realsense2_camera_msgs) StderrLine: {'line': b"  ModuleNotFoundError: No module named 'em'\n"}
+[6.154145] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[6.155058] (realsense2_camera_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[6.156075] (realsense2_camera_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)\n'}
+[6.157085] (realsense2_camera_msgs) StderrLine: {'line': b'  CMakeLists.txt:39 (rosidl_generate_interfaces)\n'}
+[6.158267] (realsense2_camera_msgs) StderrLine: {'line': b'\n'}
+[6.159115] (realsense2_camera_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[6.159636] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[6.160198] (realsense2_camera_msgs) StdoutLine: {'line': b'See also "/home/urc/rover/build/realsense2_camera_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[6.168675] (realsense2_camera_msgs) CommandEnded: {'returncode': 1}
+[6.235713] (-) TimerEvent: {}
+[6.281047] (realsense2_camera_msgs) JobEnded: {'identifier': 'realsense2_camera_msgs', 'rc': 1}
+[6.292674] (realsense2_camera) JobSkipped: {'identifier': 'realsense2_camera'}
+[6.293080] (realsense2_description) JobSkipped: {'identifier': 'realsense2_description'}
+[6.293252] (-) EventReactorShutdown: {}

@@ -1,0 +1,62 @@
+[0.077s] Invoking command in '/home/urc/rover/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=(nix:$name)\040\[\e[0;34m\](devenv)\[\e[0m\] ${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /home/urc/rover/src/realsense-ros/realsense2_camera_msgs -DCMAKE_INSTALL_PREFIX=/home/urc/rover/install/realsense2_camera_msgs
+[0.186s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.139s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.152s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.171s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.277s] [33mCMake Warning at /opt/ros/humble/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+[1.277s]   Package 'rcutils' exports library 'dl' which couldn't be found
+[1.278s] Call Stack (most recent call first):
+[1.278s]   /opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+[1.278s]   /opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.279s]   /opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+[1.279s]   /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.279s]   /opt/ros/humble/share/rosidl_typesupport_fastrtps_c/cmake/rosidl_typesupport_fastrtps_cConfig.cmake:41 (include)
+[1.280s]   /opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)
+[1.280s]   /opt/ros/humble/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+[1.280s]   /opt/ros/humble/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)
+[1.281s]   /opt/ros/humble/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+[1.281s]   CMakeLists.txt:28 (find_package)
+[1.281s] 
+[1.282s] [0m
+[1.371s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.522s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[1.587s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)
+[1.649s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.379s] [31mCMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[2.379s]   
+[2.380s]   execute_process(/nix/store/kbazl84h1h25mcx4amwiyfhrx3f61nfc-python3-3.11.8-env/bin/python3
+[2.380s]   -m rosidl_adapter --package-name realsense2_camera_msgs --arguments-file
+[2.380s]   /home/urc/rover/build/realsense2_camera_msgs/rosidl_adapter__arguments__realsense2_camera_msgs.json
+[2.380s]   --output-dir
+[2.381s]   /home/urc/rover/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs
+[2.381s]   --output-file
+[2.382s]   /home/urc/rover/build/realsense2_camera_msgs/rosidl_adapter/realsense2_camera_msgs.idls)
+[2.382s]   returned error code 1:
+[2.383s] 
+[2.383s]   Traceback (most recent call last):
+[2.383s] 
+[2.384s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[2.384s]     File "<frozen runpy>", line 88, in _run_code
+[2.384s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[2.385s]       sys.exit(main())
+[2.385s]                ^^^^^^
+[2.385s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/main.py", line 53, in main
+[2.386s]       abs_idl_file = convert_to_idl(
+[2.386s]                      ^^^^^^^^^^^^^^^
+[2.387s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/__init__.py", line 18, in convert_to_idl
+[2.388s]       from rosidl_adapter.msg import convert_msg_to_idl
+[2.388s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/msg/__init__.py", line 16, in <module>
+[2.389s]       from rosidl_adapter.resource import expand_template
+[2.389s]     File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_adapter/resource/__init__.py", line 19, in <module>
+[2.390s]       import em
+[2.390s] 
+[2.391s]   ModuleNotFoundError: No module named 'em'
+[2.391s] 
+[2.391s] Call Stack (most recent call first):
+[2.392s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[2.392s]   CMakeLists.txt:39 (rosidl_generate_interfaces)
+[2.393s] 
+[2.394s] [0m
+[2.395s] -- Configuring incomplete, errors occurred!
+[2.397s] See also "/home/urc/rover/build/realsense2_camera_msgs/CMakeFiles/CMakeOutput.log".
+[2.413s] Invoked command in '/home/urc/rover/build/realsense2_camera_msgs' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble PS1=(nix:$name)\040\[\e[0;34m\](devenv)\[\e[0m\] ${debian_chroot:+($debian_chroot)}\u@\h:\w\$ /usr/bin/cmake /home/urc/rover/src/realsense-ros/realsense2_camera_msgs -DCMAKE_INSTALL_PREFIX=/home/urc/rover/install/realsense2_camera_msgs
