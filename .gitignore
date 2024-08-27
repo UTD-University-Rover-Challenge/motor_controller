@@ -11,4 +11,4 @@ devenv.local.nix
 
 install/
 build/
-logs/
+log/
